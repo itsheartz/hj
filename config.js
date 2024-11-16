@@ -1,0 +1,27 @@
+require("./all/module");
+global.storename = "𝐌𝐚𝐧𝐳𝐌𝐨𝐝𝐬";
+global.dana = "6285724269841";
+global.qris = false;
+global.owner = "6285724269841";
+global.namabot = "𝐌𝐚𝐧𝐳𝐌𝐨𝐝𝐬 𝐁𝐮𝐠";
+global.nomorbot = "6285724269841";
+global.namaCreator = "𝐌𝐚𝐧𝐳𝐌𝐨𝐝𝐬 𝐃𝐞𝐯";
+global.linkyt = "";
+global.autoJoin = false;
+global.antilink = false;
+global.versisc = "V2.0";
+global.xmenu = "🎭/";
+global.delayjpm = 5500;
+global.codeInvite = "";
+global.imageurl = "https://img0.pixhost.to/images/898/531137436_skyzopedia.jpg";
+global.isLink = "https://whatsapp.com/channel/0029VaNBep7AojYwtfhdm3287";
+global.packname = "Sticker By🐉";
+global.author = "MANZ - \n\n\n\n\n\n6285724269841";
+global.jumlah = "5";
+let v = require.resolve(__filename);
+fs.watchFile(v, () => {
+  fs.unwatchFile(v);
+  console.log(chalk.redBright("Update " + __filename));
+  delete require.cache[v];
+  require(v);
+});
